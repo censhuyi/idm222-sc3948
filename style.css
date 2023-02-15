@@ -71,6 +71,6 @@ nav{
    }
 
    .container {
-    gap: row-gap | column-wrap;
+    gap: column-wrap;
     row-gap: 25px;
-    column-gap: 25px;
+    column-gap: 25px; }
