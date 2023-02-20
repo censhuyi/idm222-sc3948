@@ -1,26 +1,12 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 h1 { font-size: 42px;
     font-family: Arial, Helvetica, sans-serif;
     color: #2c628b;}
-
-.parent{
-    background: black;
-    height: 500px;
-    width: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.box{
-    background: red;
-    height: 100px;
-    width: 100px;
-}
 
 h3 {font-size: 16px;}
 
@@ -97,6 +83,7 @@ nav{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     height:100vh;
 }
 
@@ -108,8 +95,8 @@ nav{
 
 .about-left-content{
     box-shadow: 0px 0px 18px -1px rgba(0,0,0,0.39);
-    box-shadow: 0px 0px 18px -1px rgba(0,0,0,0.39);
-    box-shadow: 0px 0px 18px -1px rgba(0,0,0,0.39);
+    -webkit-box-shadow: 0px 0px 18px -1px rgba(0,0,0,0.39);
+    -moz-box-shadow: 0px 0px 18px -1px rgba(0,0,0,0.39);
 }
 
 .about-img img{
@@ -178,6 +165,7 @@ nav{
     height: 100vh;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
     padding: 0 5rem;
     text-align: center;
@@ -185,5 +173,67 @@ nav{
 
 .about-right h1{
     font-size: 7rem;
+    text-transform: uppercase;
 }
+
+.about-right h1 span{
+    color:antiquewhite;
 }
+
+.about-right h3{
+    font-weight: 600;
+}
+
+.about-btns{
+    display: flex;
+    margin:2rem 0;
+}
+
+.btn{
+    border: none;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    border: 2px solid #000;
+    border-radius: 20px;
+    padding: 0.55rem 0;
+    width: 130px;
+    font-weight: 600;
+    background: transparent;
+    margin: 0 0.5rem;
+    cursor: pointer;
+}
+
+.btn.btn-pink{
+    background: #2c628b;
+    color:rgb(237, 230, 224);
+    border-color:#2c628b; 
+    transition: all 0.5s ease-in-out;
+}
+
+.btn.btn-pink:hover{
+    background: transparent;
+    border-color: #2c628b;
+    color:#000;
+}
+
+.btn.btn-white{
+    transition: all 0.5s ease-in-out;
+}
+
+.btn.btn-white:hover{
+    background: #2c628b;
+    border-color: #2c628b;
+    color:#fff;
+}
+
+.about-para p{
+    font-weight: 300;
+    padding: 0.5rem;
+    opacity: 0.8;
+}
+
+@media screen and (min-width: 992px){
+    .about-wrapper{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
