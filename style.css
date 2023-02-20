@@ -8,11 +8,15 @@ h1 { font-size: 42px;
     font-family: Arial, Helvetica, sans-serif;
     color: #2c628b;}
 
-h3 {font-size: 16px;}
+h3 {font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;}
 
 body{
     background-color:rgb(237, 230, 224);
     }
+
+p { text-align: left;
+font-size: 16px;} 
 
 img {
 height: auto;
@@ -177,7 +181,7 @@ nav{
 }
 
 .about-right h1 span{
-    color:antiquewhite;
+    color:rgb(113, 217, 194);
 }
 
 .about-right h3{
@@ -237,3 +241,4 @@ nav{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
+}
