@@ -4,9 +4,10 @@
     box-sizing: border-box;
 }
 
-h1 { font-size: 42px;
+h1 { font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
     color: #2c628b;}
+
 
 h3 {font-size: 16px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;}
@@ -26,8 +27,13 @@ width: 100%;
 .logo {
     position:absolute;
     height: auto;
-    right: 0px;
+    left: 0px;
     width: 100px;
+}
+.form {
+    right: 0px;
+    color: #093349;
+    position: relative;
 }
 
 nav{
@@ -43,7 +49,7 @@ nav{
 
     ul li{
         list-style: none;
-        display: inline-block;
+        display:inline-flex;
         line-height: 100px;
     }
     
@@ -61,7 +67,7 @@ nav{
        text-decoration: underline;
     }
 
-   .image-container { 
+.image-container { 
     flex-direction: row;
     max-width: 700px;
     height: auto; 
@@ -71,7 +77,12 @@ nav{
     row-gap: 25px;
    }
 
-   .image-container img {
+   .image-container {
+    gap:column-wrap;
+    row-gap: 25px;
+    column-gap: 25px;}
+
+.image-container img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -83,7 +94,7 @@ nav{
 }
 
 .about-left{
-    background: #2c628b;
+    background: #7f99ab;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -207,14 +218,14 @@ nav{
     cursor: pointer;
 }
 
-.btn.btn-pink{
+.btn.btn-blue{
     background: #2c628b;
     color:rgb(237, 230, 224);
     border-color:#2c628b; 
     transition: all 0.5s ease-in-out;
 }
 
-.btn.btn-pink:hover{
+.btn.btn-blue:hover{
     background: transparent;
     border-color: #2c628b;
     color:#000;
@@ -241,4 +252,17 @@ nav{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
+}
+
+/* Contact Page */
+.img-wrapper{
+    height: 700px;
+    background:url(https://images.unsplash.com/photo-1461695008884-244cb4543d74?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1931&q=80);
+}
+
+.text{
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
 }
