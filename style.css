@@ -88,6 +88,92 @@ nav{
     object-fit: cover;
    }
 
+/* Gallery */
+.gallery container{
+    width: 100%;
+    text-align: center;
+}
+
+h4{
+    font-weight: normal;
+    text-align: center;
+    font-size: 35px;
+    position: relative;
+    margin: 40px 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h5{
+    text-align: center;
+    height: 100%;
+    line-height: 60px;
+    padding: 0 50px;
+    color: #2c628b;
+    background-color: rgb(208, 199, 199);
+    font-size:20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h4::before{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background-color: #1f5dc7;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: animate 4s linear infinite;
+}
+
+@keyframes animate{
+    0%{
+        width: 100px;
+    }
+    50%{
+        width:200px;
+    }
+    100%{
+        width: 100px;
+    }
+}
+
+.top-content{
+    width: 90%;
+    margin: 0 auto 20px auto;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #929b9f;
+    border-radius: 5px;
+    box-shadow:3px 3px 5px lightgray;
+}
+
+label{
+    display: inline-block;
+    height: 100%;
+    padding: 0 40px;
+    margin: 0 50px;
+    line-height:60px;
+    font-size: 18px;
+    cursor:pointer;
+    transition: color .5s;
+    color: white;
+}
+
+label:hover{
+    color:#000;
+}
+
+.photo-gallery{
+    width: 100%;
+    margin:auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:20px;
+}
+
+
 /* About Page */
 .about-wrapper{
     height:100vh;
@@ -216,19 +302,6 @@ nav{
     background: transparent;
     margin: 0 0.5rem;
     cursor: pointer;
-}
-
-.btn.btn-blue{
-    background: #2c628b;
-    color:rgb(237, 230, 224);
-    border-color:#2c628b; 
-    transition: all 0.5s ease-in-out;
-}
-
-.btn.btn-blue:hover{
-    background: transparent;
-    border-color: #2c628b;
-    color:#000;
 }
 
 .btn.btn-white{
