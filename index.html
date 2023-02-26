@@ -8,38 +8,62 @@
       <link rel="stylesheet" href="style.css">
    </head>
 <body>
-    <!--menu-->
-    <nav>
-        <div class="logo"><img src="./image/logo.png"></div>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="about.html">About Me</a></li>
-        <li><a href="contact.html">Contact</a></li>
+      <!--nav-->
+      <nav class="navbar">
+        <h1 class="logo">SHUYI CEN</h1>
+        <ul class="nav-links">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li class="ctn"><a href="contact.html"></a>Contact</li>
     </ul>
-</nav>
-<section></section>
-<!--end menu-->
+    <img src="./image/menu-btn.png" class="menu-btn">
+    </nav>
 
-<h2>Recent Work</h2>
-<h3>Restaurant Design -Philadelphia, PA</h3>
+<!-- end nav -->
 
-<div class="image-container">
-    <div class="image">
-        <img src="./image/office- lounge.png" alt="bar">
- 
-    <div class="description">
-        <h3>The One-Office Design</h3>
-    </div>
-</div>
+    <header>
+        <div class="header-content">
+            <h2>Interior Design</h2>
+           <div class="line"></div>
+           <h1>Explore Design Projects</h1>
+            <a href="gallery.html" class="ctn">Explore More</a>
+        </div>
+    </header>
+
+<!-- Recent project  -->
+    <section class="projects">
+        <div class="title">
+            <h2>Recent Projects</h2>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="./image/Restaurant-1.jpg">
+                <h6>The One-Hospitality Design</h6>
+                <a href="gallery.html" class="ctn">Learn More</a>
+            </div>
+    
+            <div class="col">
+                <img src="./image/office- lounge.png">
+                <h6>Nomi-Hospitality Design</h6>
+                <a href="gallery.html" class="ctn">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const menuBtn = document.querySelector ('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
   
-<div class="image-container">
-    <div class="image">
-        <img src="./image/Restaurant-2.jpg" alt="bar">
+        menuBtn.addEventListener('click',()=>{
+           navlinks.classList.toggle('mobile-menu')
+        })
+     </script>
 
-    <div class="description">
-        <h3>Nomi-Restaurant Design</h3>
-    </div>
-</div> -->
+     <section class="footer">
+       <p>copyright @ 2023 Shuyi Cen</p> 
+     </section>
+
 </body>
 </html>
