@@ -57,9 +57,19 @@
     </div>
     </div>
 
-    <section class="footer">
-        <p>copyright @ 2023 Shuyi Cen</p> 
-      </section>
+    <script>
+        const menuBtn = document.querySelector ('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+  
+        menuBtn.addEventListener('click',()=>{
+           navlinks.classList.toggle('mobile-menu')
+        })
+     </script>
+
+     <section class="footer">
+       <p>copyright @ 2023 Shuyi Cen</p> 
+     </section>
+
 
 </body>
 </html>

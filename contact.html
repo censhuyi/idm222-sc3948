@@ -8,22 +8,42 @@
       <link rel="stylesheet" href="style.css">
    </head>
 <body>
-    <!--menu-->
-    <nav>
-        <ul>
+    <!--nav-->
+    <nav class="navbar">
+        <h1 class="logo">SHUYI CEN</h1>
+        <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="gallery.html">Gallery</a></li>
             <li><a href="about.html">About Me</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <a href="http://127.0.0.1:5500/index.html"><img src="./image/logo.png" alt="" class="logo"></a>
-        </ul>
-    </nav>
-    <!--end menu-->
-    <div class="contact"></div>
-
-    <div class="contact-text">
-        <h3>Keep in touch!</h3>
-    </div>
     
+    </ul>
+    <img src="./image/menu-btn.png" class="menu-btn">
+    </nav>
+
+<!-- end nav -->
+<header>
+    <div class="contact">
+        <h2>Keep in Touch!</h2>
+        <div class="line"></div>
+        <h3>Name: Shuyi Cen<br>Email: sc3948@drexel.edu</h3>
+    </div>
+</header>
+
+    <script>
+        const menuBtn = document.querySelector ('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+  
+        menuBtn.addEventListener('click',()=>{
+           navlinks.classList.toggle('mobile-menu')
+        })
+     </script>
+
+     <section class="footer">
+       <p>copyright @ 2023 Shuyi Cen</p> 
+     </section>
+
+
+
 </body>
 </html>
