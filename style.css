@@ -49,15 +49,25 @@ a{
 
 ul{list-style: none;}
 
-/* body,html{
+body,html{
+    cursor: none;
     overflow-x: hidden;
-} */
+}
 
 /* nav */
-.logo{
-    color:black;
+/* .logo{
+    color:rgb(6, 1, 1);
     font-size: 25px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} */
+
+.logo img{
+    position: flex;
+    top:0;
+    left:0;
+    height:auto;
+    max-width:130px;
+
 }
 
 .navbar{
@@ -83,6 +93,10 @@ ul{list-style: none;}
     align-items: center;
 }
 
+.nav-links li a {
+    color: black;
+    font-weight: bold;
+}
 .nav-links li :hover{
     color: white;
 }
@@ -104,11 +118,43 @@ header{
     text-align: center;
 }
 
-.header-content h2{
-    height: 10vh;
-    font-size:5vmin;
-    color: #183447;
+/* .intro{
+    position: absolute;
+    top:50%;
+    left:50%;
+    font-size:60px;
+    transform: translate(-50%,-50%);
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    -webkit-background-clip:text;
+    background-image: linear-gradient(#305981, #305981);
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-position:-100px 0;
+    background-repeat: none;
+    animation: backcolor 5s linear infinite alternate;
+
+} */
+
+
+.header-content h2{
+    position: absolute;
+    top:50%;
+    left:50%;
+    font-size:60px;
+    transform: translate(-50%,-50%);
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    -webkit-background-clip:text;
+    background-image: linear-gradient(#305981, #305981);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-position:-100px 0;
+    animation: backcolor 5s linear infinite alternate;
+}
+
+@keyframes backcolor{
+    100%{
+        background-position: 0 0;
+    }
 }
 
 .line{
@@ -121,8 +167,8 @@ header{
 
 .header-content h1{
     font-size: 18px;
-    margin-top: 50px;
-    margin-bottom: 130px;
+    margin-top: 100px;
+    margin-bottom: 100px;
     color: #183447;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -186,6 +232,11 @@ header{
     width: 100%;
     height:100%;
     object-fit:cover;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./image/Chinese\ painting\ 2.jpg);
 }
 .image-grid-col-2 {
     grid-column: span 2;
@@ -521,3 +572,17 @@ label{
     margin: 20px auto;
     text-align: center;
 }
+
+
+/* text */
+.image-hover{
+    width: 500%;
+    height:281px;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('.image3.jpg');
+}
+
+
