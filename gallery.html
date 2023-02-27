@@ -16,7 +16,6 @@
             <li><a href="gallery.html">Gallery</a></li>
             <li><a href="about.html">About Me</a></li>
             <li><a href="contact.html">Contact</a></li>
-    
     </ul>
     <img src="./image/menu-btn.png" class="menu-btn">
     </nav>
@@ -33,7 +32,7 @@
         <label for="check4">Project 4</label>
     </div>
 
-    <div class="photo-gallery">
+    <!-- <div class="photo-gallery">
             <div class="column">
                 <div class="photo">
                     <img src="image/Restaurant-1.jpg">
@@ -68,7 +67,39 @@
                         <img src="image/In-the-between-space.jpeg">
                     </div>
     </div>
+</div> -->
 </div>
-</div>
+
+<section class="gallery">
+    <div class="row">
+        <div class="col content-col">
+            <h1>Design Project</h1>
+            <div class="line"></div>
+            <h2>Hospitality Projects<br>Commercial Projects</h2>
+        </div>
+
+        <div class="col image-col">
+            <div class="image-gallery">
+                <img src="image/Restaurant-1.jpg">
+                <img src="image/Chinese painting_.jpg">
+                <img src="image/In-the-between-space.jpeg">
+                <img src="image/class room.jpeg">
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    const menuBtn = document.querySelector ('.menu-btn')
+    const navlinks = document.querySelector('.nav-links')
+
+    menuBtn.addEventListener('click',()=>{
+       navlinks.classList.toggle('mobile-menu')
+    })
+ </script>
+
+ <section class="footer">
+   <p>copyright @ 2023 Shuyi Cen</p> 
+ </section>
+
 </body>
 </html>
