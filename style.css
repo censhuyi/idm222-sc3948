@@ -222,6 +222,70 @@ header{
     }
 }
 
+.about{
+    width:100%;
+    padding:30px 0px;
+    background-color: rgb(208, 217, 240);
+}
+
+.about img{
+    height: auto;
+    width: 60%;
+}
+
+.detail-text{
+    width: 550px;
+}
+
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin:0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.detail-text h2{
+    color: #2f4874;
+    font-size: 50px;
+    margin-bottom: 20px;
+    padding:0px 60px;
+}
+
+.detail-text h3{
+    color: black;
+    letter-spacing: 2px;
+    font-size: 20px;
+    margin-bottom: 25px;
+    padding:0px 60px;
+}
+
+.detail-text p{
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    margin-bottom: 45px;
+    padding:0px 60px;
+
+}
+
+.button-01{ 
+    background-color: #003f6a;
+    color: white;
+    border:2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+ }
+
+ .button-01:hover{
+    background-color: transparent;
+    border: 2px solid red;
+    cursor: pointer;
+ }
+
 /* mobile */
 @media only screen and (max-width:850px){
     .menu-btn{
@@ -540,10 +604,9 @@ label{
 }
 
 .footer img{
-    max-width: 100%;
+    max-width: 30%;
     height:auto;
     bottom:0%
-
 }
 
 /* text */
